@@ -1,0 +1,22 @@
+{
+  "name": "node_1_selfieapp",
+  "version": "1.0.0",
+  "description": "app Selfie App, così come descritta in https://www.youtube.com/watch?v=wxbQP1LMZsw&list=PLRqwX-V7Uu6YxDKpFzf_2D84p0cyk4T7X&index=9",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tutorial",
+    "data",
+    "selfie"
+  ],
+  "author": "Alessandro Ebranati (Daniel Shiffman, Joey Lee)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "nedb": "^1.8.0",
+    "node-fetch": "^2.6.0"
+  }
+}

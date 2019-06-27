@@ -1,0 +1,16 @@
+#myMap {
+  height: 200px;
+}
+
+#worldMap {
+  height: 400px;
+}
+
+canvas {
+  margin: auto;
+}
+
+p {
+  padding: 10px;
+  background-color: #FFAAFF;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Meteo App (geolocation, persistenza su NeDB, API server-side da node.js ...)</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <h1>Meteo App</h1>
+  <p>(geolocation, persistenza su NeDB, API server-side da node.js ...)</p>
+  <p><a href="/">immissione</a> | <a href="/logs/">query al DB</a></p>
+  <p>Umore: <input id="umore" value="rainbow 🌈" /></p>
+  <p>Qui (lat: <span id="dom_lat">...</span>&deg;, lon: <span id="dom_lon">...</span>&deg;) <br />
+    il tempo &eacute; <span id="dom_summary">...</span> con una temperatura di
+    <span id="dom_temp">...</span>&deg;C.</p>
+  <p><div id="myMap"></div></p>
+
+  <script src="sketch.js"></script>
+
+</html>
