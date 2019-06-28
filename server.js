@@ -4,7 +4,8 @@ const fetch = require('node-fetch');
 require('dotenv').config();
 
 const app = express();
-app.listen(3000, () => console.log('listening on port 3000'));
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`listening on port ${port}`));
 app.use(express.static('public_html')); // si appoggia ad express per servire le pagine statiche presenti nel subfolder
 app.use(express.json({
   'limit': '1mb'
